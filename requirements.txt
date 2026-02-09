@@ -1,0 +1,9 @@
+Flask
+pymongo
+pdfplumber
+python-dotenv
+groq
+flask-bcrypt
+gunicorn
+fpdf
+pdfkit
