@@ -1,0 +1,16 @@
+<h2>Admin Dashboard</h2>
+<a href="{{ url_for('logout') }}">Logout</a>
+<table border="1">
+<tr>
+<th>User</th><th>Resume</th><th>Job Description</th><th>Result</th><th>Submitted At</th>
+</tr>
+{% for r in results %}
+<tr>
+<td>{{ r.user }}</td>
+<td>{{ r.resume_filename }}</td>
+<td>{{ r.job_description }}</td>
+<td><pre>{{ r.analysis_result }}</pre></td>
+<td>{{ r.created_at }}</td>
+</tr>
+{% endfor %}
+</table>
